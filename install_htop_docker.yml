@@ -1,0 +1,11 @@
+---
+- hosts: all
+  become: true
+  tasks:
+  - name: Install packages
+    apt:
+      name:
+      - htop
+      - docker
+      - docker-compose
+
